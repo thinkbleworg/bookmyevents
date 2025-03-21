@@ -11,6 +11,7 @@ import EventHandlingPage from './pages/EventHandlingPage';
 
 
 function App() {
+  
   return (
     <ThemeProvider>
       <ToastProvider>

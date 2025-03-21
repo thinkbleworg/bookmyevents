@@ -124,11 +124,9 @@ const EventForm = ({ isEdit = false }) => {
 
   useEffect(() => {
     if (isEdit && !loading && (!selectedEvent || selectedEvent.event_id !== id)) {
-        console.log("fetchEventById");
       dispatch(fetchEventById(id));
     }
     return () => {
-        console.log("clearSelectedEvent");
       dispatch(clearSelectedEvent());
     };
   }, [dispatch, id, isEdit]);

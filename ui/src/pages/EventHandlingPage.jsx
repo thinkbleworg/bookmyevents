@@ -7,8 +7,6 @@ const EventHandlingPage = () => {
   const { id } = useParams();
   const isEdit = !!id;
 
-  console.log("isEdit", isEdit);
-
   return (
     <>
       <Navbar noButtons={true} />
